@@ -128,6 +128,17 @@ docker-compose up -d
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/24e3850f-a595-4c70-a9e9-b44629551bc4" />
 
+## Chỉnh sửa giao diện bài viết
+- Truy cập địa chỉ http://localhost:9000/wp-admin.
+- Chọn Giao diện -> Sửa giao diện
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f9891ab7-dc9f-43ca-9ebf-48a3f9d5313d" />
+
+- Chèn thêm ảnh vào giao diện bài viết -> nhấn lưu thay đổi
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/03cb3d8d-1838-4d84-b128-5b8a99676745" />
+
+- Kết quả sau khi chỉnh sửa giao diện:
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/20e7c57a-febb-4648-916d-d474f4dd2323" />
+
 ## Kiểm tra tính ổn định trên Docker
 - Mở Docker Desktop
 - Kiểm tra danh sách Containers: Cả db (MariaDB) và wordpress phải hiển thị trạng thái xanh (Running).
