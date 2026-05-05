@@ -1,4 +1,32 @@
 # MariaDB-Wordpress-Plugin
+# Giới thiệu
+- Dự án xây dựng website sử dụng WordPress kết hợp với MariaDB.
+- WordPress đảm nhiệm phần giao diện và quản lý nội dung, trong khi MariaDB lưu trữ toàn bộ dữ liệu. Hệ thống có thể mở rộng thông qua plugin để bổ sung các chức năng cần thiết.
+
+# Mục tiêu
+- Xây dựng website động hoàn chỉnh.
+- Kết nối WordPress với MariaDB.
+- Triển khai nhanh bằng Docker.
+- Tìm hiểu cách cài đặt và sử dụng plugin.
+
+# Công nghệ sử dụng:
+- WordPress (PHP, CMS).
+- MariaDB (Database).
+- Docker & Docker Compose.
+
+# Nguyên lý hoạt động
+- Người dùng truy cập website.
+- WordPress xử lý yêu cầu (PHP).
+- Gửi truy vấn đến MariaDB.
+- MariaDB trả dữ liệu.
+- WordPress hiển thị kết quả.
+
+# Plugin
+- Plugin giúp mở rộng chức năng mà không cần sửa code.
+- Một số plugin phổ biến:
+  + Elementor (thiết kế giao diện)
+  + Yoast SEO (tối ưu SEO)
+  + Contact Form 7 (form liên hệ)
 
 ## Bước 1: Chuẩn bị môi trường
 - Bạn cần cài đặt Docker và Docker Compose trên máy tính (Windows, Mac hoặc Linux).
