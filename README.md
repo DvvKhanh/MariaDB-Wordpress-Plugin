@@ -136,30 +136,22 @@ sudo docker-compose up -d
 
 ## Kiểm tra quyền quản trị và viết bài mới
 - Vì em đã chọn Classic Editor để kiểm soát tốt mã nguồn HTML, nên em sẽ kiểm tra xem nó đã thay đổi giao diện soạn thảo chưa:
-  + Truy cập Dashboard: truy cập địa chỉ http://localhost:9000/wp-admin.
+  + Truy cập Dashboard: truy cập địa chỉ http://192.168.91.154:9000/wp-admin
   + Tạo nội dung: Chọn menu Bài viết (Posts) -> Thêm bài viết -> Xuất bản -> Cập nhật
 
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d417b1d9-e898-4564-8c21-29476aca0e22" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/190af4d8-2a43-4d1d-8e2a-fbeb35cd001d" />
 
 ## Kiểm tra hiển thị thực tế
-- Truy cập đường link: http://localhost:9000
-
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/24e3850f-a595-4c70-a9e9-b44629551bc4" />
+- Truy cập đường link: http://192.168.91.154:9000/
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f4a49682-15c0-4315-a24f-3c0d8f088178" />
 
 ## Chỉnh sửa giao diện bài viết
-- Truy cập địa chỉ http://localhost:9000/wp-admin.
+- Truy cập địa chỉ http://192.168.91.154:9000/wp-admin
 - Chọn Giao diện -> Sửa giao diện
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f9891ab7-dc9f-43ca-9ebf-48a3f9d5313d" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a61f3788-420a-4a94-8025-61bc9caa8455" />
 
 - Chèn thêm ảnh vào giao diện bài viết -> nhấn lưu thay đổi
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/03cb3d8d-1838-4d84-b128-5b8a99676745" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/345ac80c-d518-4115-8f41-c72a9864d987" />
 
 - Kết quả sau khi chỉnh sửa giao diện:
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/20e7c57a-febb-4648-916d-d474f4dd2323" />
-
-## Kiểm tra tính ổn định trên Docker
-- Mở Docker Desktop
-- Kiểm tra danh sách Containers: Cả db (MariaDB) và wordpress phải hiển thị trạng thái xanh (Running).
-- Việc truy cập được web và đăng được bài chứng minh rằng sự kết nối giữa WordPress và MariaDB thông qua Docker Network đang hoạt động hoàn hảo.
-
-<img width="1583" height="894" alt="image" src="https://github.com/user-attachments/assets/1b74737f-6590-44e5-bc8b-620c033d14c0" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f7b45351-dede-42d9-ba47-564efb6de2f2" />
