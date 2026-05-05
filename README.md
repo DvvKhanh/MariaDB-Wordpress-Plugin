@@ -116,3 +116,21 @@ docker-compose up -d
 - Trong Classic Editor nhấn nút Cài đặt ngay, sau đó nhấn Kích hoạt.
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/74982624-85ff-4a1e-a21a-ad9bcb491385" />
 
+## Kiểm tra quyền quản trị và viết bài mới
+- Vì em đã chọn Classic Editor để kiểm soát tốt mã nguồn HTML, nên em sẽ kiểm tra xem nó đã thay đổi giao diện soạn thảo chưa:
+  + Truy cập Dashboard: truy cập địa chỉ http://localhost:9000/wp-admin.
+  + Tạo nội dung: Chọn menu Bài viết (Posts) -> Thêm bài viết -> Xuất bản -> Cập nhật
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d417b1d9-e898-4564-8c21-29476aca0e22" />
+
+## Kiểm tra hiển thị thực tế
+- Truy cập đường link: http://localhost:9000
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/24e3850f-a595-4c70-a9e9-b44629551bc4" />
+
+## Kiểm tra tính ổn định trên Docker
+- Mở Docker Desktop
+- Kiểm tra danh sách Containers: Cả db (MariaDB) và wordpress phải hiển thị trạng thái xanh (Running).
+- Việc truy cập được web và đăng được bài chứng minh rằng sự kết nối giữa WordPress và MariaDB thông qua Docker Network đang hoạt động hoàn hảo.
+
+<img width="1583" height="894" alt="image" src="https://github.com/user-attachments/assets/1b74737f-6590-44e5-bc8b-620c033d14c0" />
