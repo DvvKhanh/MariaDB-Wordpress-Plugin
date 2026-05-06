@@ -112,7 +112,13 @@ sudo docker-compose up -d
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9369a653-da96-444d-8e29-f1d18aba7edb" />
 
 - Thiết lập thông tin quản trị và sau đó nhấn Cài đặt WordPress
+  + Site Title: MariaDB by Khánh
+  + Username: khanh
+  + Password: (tự đặt)
+  + Email: tùy
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/5cb9cb50-04f8-4f2c-bf91-eed5b8744f2b" />
+
+👉 Bấm Install WordPress
 
 ## Bước 7: Cài đặt Plugin
 - Đăng nhập thông tin quản trị vừa đăng ký vào Dashboard:
@@ -155,3 +161,41 @@ sudo docker-compose up -d
 
 - Kết quả sau khi chỉnh sửa giao diện:
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f7b45351-dede-42d9-ba47-564efb6de2f2" />
+
+## Kiểm tra MariaDB
+- Truy cập vào MariaDB và nhập password: root123
+```
+docker exec -it mariadb mysql -u root -p
+```
+<img width="962" height="262" alt="image" src="https://github.com/user-attachments/assets/8ec4f923-28a6-412c-b677-3c6d8d5e0e90" />
+
+- Kiểm tra database WordPress
+```
+SHOW DATABASES;
+```
+<img width="495" height="276" alt="image" src="https://github.com/user-attachments/assets/696c96b8-5179-493a-b33f-f652a023629e" />
+
+- Chọn database
+```
+USE wordpress;
+```
+<img width="838" height="147" alt="image" src="https://github.com/user-attachments/assets/6d80dfde-fb39-4a15-980d-c90c7e09e5d2" />
+
+- Xem các bảng (đây là bằng chứng WordPress hoạt động)
+```
+SHOW TABLES;
+```
+<img width="473" height="499" alt="image" src="https://github.com/user-attachments/assets/046557c1-451e-4c7e-974b-c31c1373ce95" />
+
+- Kiểm tra dữ liệu thật
+  + Xem user admin: ```SELECT ID, user_login, user_email FROM wp_users;```
+<img width="845" height="222" alt="image" src="https://github.com/user-attachments/assets/b9caef12-a313-4d66-b9ee-59fd0ec76a7c" />
+
+  + Xem bài viết: ```SELECT ID, post_title FROM wp_posts;```
+<img width="729" height="480" alt="image" src="https://github.com/user-attachments/assets/bdd3ffe0-4dbb-4f5b-8c40-68aafc84b033" />
+
+- Kiểm tra cấu hình user
+```
+SELECT User, Host FROM mysql.user;
+```
+<img width="710" height="360" alt="image" src="https://github.com/user-attachments/assets/6c9db664-3359-4b2a-b7b9-05770fd4225a" />
