@@ -1,4 +1,7 @@
 # MariaDB-Wordpress-Plugin
+# Họ tên: Đậu Văn Khánh
+# MSSV: K225480106099
+# Lớp: K58KTP
 # Giới thiệu
 - Dự án xây dựng website sử dụng WordPress kết hợp với MariaDB.
 - WordPress đảm nhiệm phần giao diện và quản lý nội dung, trong khi MariaDB lưu trữ toàn bộ dữ liệu. Hệ thống có thể mở rộng thông qua plugin để bổ sung các chức năng cần thiết.
